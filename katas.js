@@ -3,15 +3,13 @@
 let sum = 0;
 let a = 1;
 let b = 1;
-let runningTotal = 1;
 
-while (runningTotal <= 4000000) {
-  if (isEven(runningTotal)) {
-    sum += runningTotal;
+while (b <= 4000000) {
+  if (isEven(b)) {
+    sum += b;
   }
   a = b;
-  b = runningTotal;
-  runningTotal = a + b;
+  b = a + b;
 }
 
 function isEven(n) {
